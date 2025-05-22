@@ -68,7 +68,7 @@ router.post("/forgot-password", async (req, res) => {
     <p>Hi there,</p>
       <br>
     <p>We received a request to reset the password for your account. To proceed with the password reset, please click on the link below:</p>
-    <p>Click here : <a href="http://localhost:5000/resetpw/${resetToken}">Reset Password</a></p>
+    <p>Click here : <a href="https://google-cheetah.onrender.com/resetpw/${resetToken}">Reset Password</a></p>
     <br>
     <p>Please ensure you use this link within the next 1 hour as it will expire after that for security reasons.</p>
     <p>If you didn't request a password reset, please ignore this email.</p>

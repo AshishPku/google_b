@@ -31,9 +31,9 @@ app.use(passport.session());
 app.use(
   cors({
     origin: [
-      "https://cheetah-group.onrender.com",
       "http://localhost:5173",
       "http://localhost:5000",
+      "https://cheetah-auth.vercel.app",
     ],
     credentials: true,
   })
@@ -84,7 +84,7 @@ app.get(
   "/auth/google/callback",
   passport.authenticate("google", { failureRedirect: "/" }),
   function (req, res) {
-    res.redirect("http://localhost:5173/home");
+    res.redirect("https://cheetah-auth.vercel.app/home");
   }
 );
 
